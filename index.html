@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Loja de tenis</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> <img src="shoes.png" width="25" height="25" ></i>StreetShoe</a>
+
+        <ul class="navegação">
+            <li><a href="#">Visão geral</a></li>
+            <li><a href="#product_nike">nike</a></li>
+            <li><a href="#product_adidas">Adidas</a></li>
+            <li><a href="#product_pulma">Pulma</a></li>
+        </ul><!--navegação-->
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div><!--header-icons-->
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="./pulma_1.png" class="one">
+        </div><!--home-img-->
+
+        <div class="home-text">
+
+            <h1>Novas <br> Coleções</h1>
+            <h5>Calçados a partir de : </h5>
+            <h3>R$199.00</h3>
+            <a href="#" class="btn">Comprar agora</a>
+            
+        </div><!--home-text-->
+    </section><!--home-->
+
+
+    <div class="main">
+        <div class="row">
+            <li><img src="nike_1.png" onclick="slider('nike_1.png')"></li>
+        </div><!--row-->
+
+        <div class="row2">
+            <li><img src="pulma_1.png" onclick="slider('pulma_1.png')"></li>
+        </div><!--row2-->
+
+        <div class="row3">
+            <li><img src="adidas_1.png"  width="200" onclick="slider('adidas_1.png')"></li>
+        </div><!--row3-->
+    </div><!--main-->
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+       let menu = document.querySelector ('#menu-icon');
+       let navbar = document.querySelector ('.navbar');
+
+       menu.onclick = () => {
+        menu.classList.toggle ('bx-x');
+        navbar.classList.toggle ('open');
+       }
+
+    </script>
+
+<center><section id="product_nike" class="product"><h1>Lançamentos Nike</h1></section><br></center>
+
+    <!--card nike-->
+    <div class="container_cards">
+      <div class="card">
+        <div class="imgBx">
+            <img src="./nike_1.png" alt="">
+        </div>
+        <div class="contentBx">
+            <h3>Nike Air Max</h3>
+            <p>Size 41-42</p>
+            <h2 class="price">R$ 199.<small>00</small></h2>
+            <a href="#" class="buy">Compre Agora</a>
+        </div>
+    </div>
+    
+    <div class="card">
+      <div class="imgBx">
+          <img src="./img_nike/Nike_low.png" alt="">
+      </div>
+      <div class="contentBx">
+          <h3>Air Force 1 Low
+          </h3>
+          <p>Size 40</p>
+          <h2 class="price">R$ 799.<small>99</small></h2>
+          <a href="#" class="buy">Compre Agora</a>
+      </div>
+  </div>
+  
+  <div class="card">
+    <div class="imgBx">
+        <img src="./img_nike/nike_shadow.png" alt="">
+    </div>
+    <div class="contentBx">
+        <h3>Nike Air force 1 shadow</h3>
+        <p>Size 39-40</p>
+        <h2 class="price">R$ 280.<small>00</small></h2>
+        <a href="#" class="buy">Compre Agora</a>
+    </div>
+  </div>
+  
+  
+  <div class="card">
+    <div class="imgBx">
+        <img src="./img_nike/nike_jordan4.png" alt="">
+    </div>
+    <div class="contentBx">
+        <h3>Nike Air jordan-PSG</h3>
+        <p>Size 43</p>
+        <h2 class="price">R$ 980.<small>00</small></h2>
+        <a href="#" class="buy">Compre Agora</a>
+    </div>
+  </div>
+  </div>
+   <!--card nike-->
+   <br>
+   <center><section  id="product_adidas" class="product"><h1>Lançamentos Adidas</h1></section><br></center>
+<!--card adidas-->
+  <div class="container_cards">
+    <div id="card_adidas" class="card">
+      <div class="imgBx">
+        <br><br>
+          <img id="adidas_1" src="adidas_1.png" alt="">
+      </div>
+      <div class="contentBx">
+          <h3>Adidas ultra boost</h3>
+          <p>Size 42</p>
+          <h2 class="price">R$ 199.<small>00</small></h2>
+          <a href="#" class="buy">Compre Agora</a>
+      </div>
+  </div>
+  
+  <div class="card">
+    <div id="adidas_2" class="imgBx">
+        <img src="./img_adidas/adidas_forum.png" alt="">
+    </div>
+    <div id="adidas_2" class="contentBx">
+        <h3>Adidas Forum Low </h3>
+        <p>Size 41</p>
+        <h2 class="price">R$ 250.<small>00</small></h2>
+        <a href="#" class="buy">Compre Agora</a>
+    </div>
+</div>
+
+<div class="card">
+  <div class="imgBx">
+      <img id="adidas_3" src="./img_adidas/adidas_recycled.png" alt="">
+  </div>
+  <div class="contentBx">
+      <h3>Nadidas Forum Mid  </h3>
+      <h3>Recycled</h3>
+      <p>Size 43</p>
+      <h2 class="price">R$ 799.<small>90</small></h2>
+      <a href="#" class="buy">Compre Agora</a>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="imgBx">
+      <img id="adidas_4" src="./img_adidas/adidas_nmd.png" alt="">
+  </div>
+  <div class="contentBx">
+      <h3>Adidas nmd</h3>
+      <p>Size 41-45</p>
+      <h2 class="price">R$ 50.<small>99</small></h2>
+      <a href="#" class="buy">Compre Agora</a>
+  </div>
+</div>
+</div>
+
+<!--card adidas-->
+<br>
+<center><section><h1 id="product_pulma" class="product">Lançamentos Pulma</h1></section><br></center>
+<!--card pulma-->
+    <div class="container_cards">
+    <div class="card">
+      <div class="imgBx">
+          <img src="pulma_1.png" alt="">
+      </div>
+      <div class="contentBx">
+          <h3>Pulma X-ray</h3>
+          <p>Size 44</p>
+          <h2 class="price">R$ 199.<small>99</small></h2>
+          <a href="#" class="buy">Compre Agora</a>
+      </div>
+  </div>
+  
+  <div class="card">
+    <div class="imgBx">
+        <img src="./img_puma/puma_trinity.png" alt="">
+    </div>
+    <div class="contentBx">
+        <h3>puma trinity </h3>
+        <p>Size 42</p>
+        <h2 class="price">R$ 512.<small>20</small></h2>
+        <a href="#" class="buy">Compre Agora</a>
+    </div>
+</div>
+
+<div class="card">
+  <div class="imgBx">
+      <img src="./img_puma/pulma_rsz.png" alt="">
+  </div>
+  <div class="contentBx">
+      <h3>Pulma RS-X 3D</h3>
+      <p>Size 39</p>
+      <h2 class="price">R$ 280.<small>00</small></h2>
+      <a href="#" class="buy">Compre Agora</a>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="imgBx">
+      <img src="./img_puma/pulma_flyer.png" alt="">
+  </div>
+  <div class="contentBx">
+      <h3>Pulma flyer Runner</h3>
+      <p>Size 43</p>
+      <h2 class="price">R$ 239.<small>90</small></h2>
+      <a href="#" class="buy">Compre Agora</a>
+  </div>
+</div>
+
+
+<!--card pulma-->
+  
+  
+</div>
+
+<a id="link-topo" href="#">&#9650;</a>
+
+     <section class="Contato" id="Contato">
+      <div class="meio-contato">
+        <h3>Explore</h3>
+        <li><a href="#">Home</a></li>
+      </div>
+  
+      <div class="meio-contato">
+        <h3>contatos</h3>
+        <li><a href="https://github.com/igor-cavalcante">GitHub</a></li>
+
+      </div>
+  
+      <div class="meio-contato">
+        <h3>Marcas</h3>
+        <li><a href="#product_nike">Nike</a></li>
+        <li><a href="#product_adidas">Adidas</a></li>
+        <li><a href="#product_pulma">Pulma</a></li>
+      </div>
+  
+    </section>
+  
+    <div class="last-text">
+      <p>Copyright © 2022 All rights reserved | This template is made with  by Igor Cavalcante</p>
+    </div>
+
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="js/script.js"></script>
+    
+</body>
+</html>
